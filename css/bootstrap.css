@@ -41,15 +41,6 @@ audio:not([controls]) {
   display: none;
 }
 
-html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-}
 
 a:focus {
   outline: thin dotted;
@@ -751,6 +742,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  font-size: 19px;
 }
 
 .container:before,
@@ -916,7 +908,8 @@ pre code {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 750px;
+    max-width: 768px;
+    font-size: 18px;
   }
   .col-sm-1,
   .col-sm-2,
@@ -4073,7 +4066,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-collapse {
-  max-height: 340px;
+  max-height: 410px;
   padding-right: 15px;
   padding-left: 15px;
   overflow-x: visible;
@@ -4491,8 +4484,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-  background-color: #000000;
-  border-color: #000000;
+  background-color: transparent;
 }
 
 .navbar-inverse .navbar-brand {
@@ -4510,20 +4502,20 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #999999;
+  color: rgb(223,205,175);
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #ffffff;
+  color: rgb(227,184,110);
   background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #ffffff;
-  background-color: #080808;
+  color: rgb(227,184,110);
+  background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > .disabled > a,
@@ -4576,6 +4568,18 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 @media (max-width: 767px) {
+
+  .navbar-inverse {
+  background-color: #140E06;
+  border-color: #000000;
+  }
+  .navbar-inverse .navbar-nav > .active > a,
+  .navbar-inverse .navbar-nav > .active > a:hover,
+  .navbar-inverse .navbar-nav > .active > a:focus {
+    color: rgb(227,184,110);
+    background-color: rgb(11,8,7);
+  }
+
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #080808;
   }

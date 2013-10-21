@@ -35,7 +35,9 @@ $(window).load(function (){
 		closeClick	: false,
 		openEffect	: 'none',
 		closeEffect	: 'none'
-	});
+		});
+
+		
 
 });
 //$("h1").css("background-color", "yellow");
@@ -51,6 +53,8 @@ $.ajax({
 		$(".fancybox").fancybox();
 		$("#menu-top ul li").removeClass('active');
 		$("#gallery-option").addClass('active');
+		$("#menu-bottom ul li").removeClass('active');
+		$("#gallery-option-bottom").addClass('active');
 
 	  });
 }
@@ -64,6 +68,8 @@ $.ajax({
 	    $( "#principal-content" ).html( html);
 	    $("#menu-top ul li").removeClass('active');
 	    $("#index-option").addClass('active');
+	    $("#menu-bottom ul li").removeClass('active');
+		$("#index-option-bottom").addClass('active');
 
 	  });
 

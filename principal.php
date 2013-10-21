@@ -3,7 +3,7 @@
 
         <!-- Carousel 1
         ================================================== -->
-        <div id="myCarousel" class="carousel slide">
+        <div id="myCarousel" class="carousel slide shadow">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -54,7 +54,7 @@
 
     ================================================== -->
    
-         <div id="myCarousel2" class="carousel slide">
+         <div id="myCarousel2" class="carousel slide shadow">
           <!-- Indicators -->
           
           <ol class="carousel-indicators">
@@ -77,14 +77,41 @@
           </div>
           <a class="left carousel-control" href="#myCarousel2" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
           <a class="right carousel-control" href="#myCarousel2" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-
-           <div id="events-title">
-            EVENTS
-          </div>
           
         </div>
        
-
+        <div  id="special-section">
+          <ul>
+            <li>
+              <a href="#" onclick="">
+                <div id="table-reservations">
+                  <img src="img/home/table_reservation.png"></img>
+                  Table Reservations
+                </div>
+              </a>  
+          </li>
+            <li>
+              <a href="#" onclick="">
+                <div id="private-parties">
+                  <img src="img/home/private_parties.png"></img>
+                  Private Parties
+                </div>
+              </a>  
+            </li>
+             <li>
+              <a href="#" onclick="">
+                <div id="newsletter">
+                  <img src="img/home/newsletter.png"></img>
+                  Newsletter
+                </div>
+              </a>  
+            </li>
+          </ul>
+        </div>
    <!-- /.carousel -->
 
+
+
 </div>
+
+<div id="push"><!-- Leave this element empty --></div>
