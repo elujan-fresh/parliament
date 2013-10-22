@@ -27,11 +27,15 @@
 .fancybox-skin {
 	position: relative;
 	background-color: transparent;
-	color: #444;
+	color: rgb(223,205,175);
 	text-shadow: none;
 	/*-webkit-border-radius: 4px;
 	   -moz-border-radius: 4px;
 	        border-radius: 4px;*/
+}
+
+.fancybox-skin p{
+	font-size: 15px;
 }
 
 .fancybox-opened {
@@ -46,17 +50,29 @@
 	border-image: url("../../img/home/border.png") 27 stretch stretch;
 	overflow: hidden;
  	background-attachment: fixed;
-	background-image:url('../../img/backgrounds/bg2.png'); 
+	background-image:url('../../img/backgrounds/bg4.jpg'); 
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;}
 
+
+@media (min-width: 1px) {
+.fancybox-outer, .fancybox-inner {
+	position: relative;
+	width: 104% !important;
+}
+}
+
+@media (min-width: 680px) {
 .fancybox-outer, .fancybox-inner {
 	position: relative;
 	width: 102% !important;
 }
+}
+
+
 
 .fancybox-inner {
 	overflow: hidden;

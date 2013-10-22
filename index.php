@@ -49,13 +49,13 @@
               <div id="menu-top" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                   <li id="menu-decoration"></li>
-                  <li id="index-option" class="active"><a href="#" onclick="loadIndex();">Home</a></li>
+                  <li id="index-option" class="active"><a href="#home" onclick="loadIndex();">Home</a></li>
                   <li id="reservations-option"><a href="#reservations">Reservations</a></li>
                   <li id="Private-option"><a href="#private">Private Events</a></li>
                   <li id="menu-option"><a href="#menu">Menu</a></li>
-                  <li id="gallery-option"><a href="#" onclick="loadGallery();">Gallery</a></li>
-                  <li id="about-option"><a href="#about">About</a></li>
-                  <li id="contact-option"><a href="#contact">Contact</a></li>
+                  <li id="gallery-option"><a href="#gallery" onclick="loadGallery();">Gallery</a></li>
+                  <li id="about-option"><a href="#about" onclick="loadAbout();">About</a></li>
+                  <li id="contact-option"><a href="#contact" onclick="loadContact();">Contact</a></li>
                   <li id="menu-decoration"></li>
 
                 </ul>
@@ -110,13 +110,13 @@
               <li>
                   <div  id="menu-bottom" class="menu-footer">
                   <ul id="menu-footer-nav">
-                      <li id="index-option-bottom" class="active"><a href="#" onclick="loadIndex();">Home</a></li>
+                      <li id="index-option-bottom" class="active"><a href="#home" onclick="loadIndex();">Home</a></li>
                       <li id="reservations-option-bottom"><a href="#reservations">Reservations</a></li>
                       <li id="private-option-bottom"><a href="#private">Private Events</a></li>
                       <li id="menu-option-bottom"><a href="#menu">Menu</a></li>
-                      <li id="gallery-option-bottom"><a href="#" onclick="loadGallery();">Gallery</a></li>
-                      <li id="about-option-bottom"><a href="#about">About</a></li>
-                      <li id="contact-option-bottom"><a href="#contact">Contact</a></li>
+                      <li id="gallery-option-bottom"><a href="#gallery" onclick="loadGallery();">Gallery</a></li>
+                      <li id="about-option-bottom"><a href="#about" onclick="loadAbout();">About</a></li>
+                      <li id="contact-option-bottom"><a href="#contact"  onclick="loadContact();">Contact</a></li>
                   </ul>
                 </div>
               </li>
@@ -135,7 +135,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/holder.js"></script>
     <script src="js/main.js"></script>
-   
+    
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="js/jquery-ui.js"></script>
 
     <!-- Add mousewheel plugin (this is optional) -->
     <script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>

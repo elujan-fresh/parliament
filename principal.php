@@ -83,26 +83,26 @@
         <div  id="special-section">
           <ul>
             <li>
-              <a href="#" onclick="">
                 <div id="table-reservations">
-                  <img src="img/home/table_reservation.png"></img>
-                  Table Reservations
+                  <a class="reservations fancybox.ajax" href="reservation.php">
+                    <img src="img/home/table_reservation.png"></img>
+                    Table Reservations
+                  </a>  
                 </div>
-              </a>  
           </li>
             <li>
-              <a href="#" onclick="">
                 <div id="private-parties">
-                  <img src="img/home/private_parties.png"></img>
-                  Private Parties
+                  <a class="various fancybox.ajax" href="private_parties.php">
+                    <img src="img/home/private_parties.png"></img>Private Parties
+                </a>      
                 </div>
               </a>  
             </li>
              <li>
-              <a href="#" onclick="">
-                <div id="newsletter">
-                  <img src="img/home/newsletter.png"></img>
-                  Newsletter
+                <div id="newsletter">  
+                 <a class="various fancybox.ajax" href="newsletter.php">
+                  <img src="img/home/newsletter.png"></img>Newsletter
+                </a>              
                 </div>
               </a>  
             </li>
