@@ -152,13 +152,12 @@ $.ajax({
 function loadAlbum(albumName,photosNumber){
 	$('#phothoscomplete-album').html("");
 	for (var i = 0; i <= photosNumber-1; i++) {
-		console.log(i);
 		photoNumber= i+1;
 		var $new = $("<li><a href='#'><img src='img/gallery/album"+albumName+"/small_gallery_"+photoNumber+".jpg' data-large='img/gallery/album"+albumName+"/big_gallery_"+photoNumber+".jpg' alt='' data-description='' /></a></li>");
 		Gallery.addItems( $new );
 	}
 
-	
+
 }
 
 //table reservation functions
