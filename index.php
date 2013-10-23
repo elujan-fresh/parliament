@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="ico/favicon.png">
-
     <title>Parliament</title>
 
     <!-- Bootstrap core CSS -->
@@ -27,6 +27,7 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
+
     <div id="fb-root"></div>
     
 
@@ -128,13 +129,12 @@
      <div id="extra-footer-fb" style="display:none;">
       <div class="fb-comments" data-href="http://parliament.ndmmx.com/" data-colorscheme="dark" data-numposts="5" data-width="The pixel width of the plugin"></div>
     </div>
-<!-- Bootstrap core JavaScript 
+<!-- JavaScript 
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/holder.js"></script>
-    <script src="js/main.js"></script>
     
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
     <script src="js/jquery-ui.js"></script>
@@ -153,5 +153,11 @@
 
     <link rel="stylesheet" href="js/fancybox/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
     <script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+
+    <script type="text/javascript" src="js/gallery/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="js/gallery/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/gallery/jquery.elastislide.js"></script>
+    <script src="js/main.js"></script>
+
   </body>
 </html>

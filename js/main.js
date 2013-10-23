@@ -37,7 +37,7 @@ $(window).load(function (){
 		closeEffect	: 'none'
 		});
 
-
+//form reservation
 $(".reservations").fancybox({
 		maxWidth	: 800,
 		maxHeight	: 600,
@@ -62,9 +62,6 @@ $(".reservations").fancybox({
 		        //buttonImageOnly: true,
 		      } );*/
 
-			/*jQuery(document).ready(function(){
-			        $.datepicker.parseDateTime = function(dateFormat, timeFormat, dateTimeString, dateSettings, timeSettings){};
-			});*/
             $("#uvform").submit(function(e) {
 			    e.preventDefault();
 			    $.ajax({
@@ -72,7 +69,7 @@ $(".reservations").fancybox({
 			        url : this.action,
 			        data : $(this).serialize(),
 			        success : function() {
-			            window.location = "http://www.parliamentchicago.com/";
+			            window.location = "http://parliament.ndmmx.com/";
 			        },
 			        error : function() {
 			            alert("Please verify that all required fields are filled in.");
@@ -95,8 +92,6 @@ function loadContact(){
 	})
 	 .done(function( html ) {
 	    $( "#principal-content" ).html( html );
-	    //fancybox gallery
-		$(".fancybox").fancybox();
 		$("#menu-top ul li").removeClass('active');
 		$("#contact-option").addClass('active');
 		$("#menu-bottom ul li").removeClass('active');
@@ -112,8 +107,6 @@ function loadAbout(){
 	})
 	 .done(function( html ) {
 	    $( "#principal-content" ).html( html );
-	    //fancybox gallery
-		$(".fancybox").fancybox();
 		$("#menu-top ul li").removeClass('active');
 		$("#about-option").addClass('active');
 		$("#menu-bottom ul li").removeClass('active');
@@ -129,8 +122,8 @@ $.ajax({
 	})
 	 .done(function( html ) {
 	    $( "#principal-content" ).html( html );
-	    //fancybox gallery
-		$(".fancybox").fancybox();
+	    /*/fancybox gallery
+		$(".fancybox").fancybox();*/
 		$("#menu-top ul li").removeClass('active');
 		$("#gallery-option").addClass('active');
 		$("#menu-bottom ul li").removeClass('active');
@@ -156,6 +149,19 @@ $.ajax({
 
 }
 
+function loadAlbum(albumName,photosNumber){
+	$('#phothoscomplete-album').html("");
+	for (var i = 0; i <= photosNumber-1; i++) {
+		console.log(i);
+		photoNumber= i+1;
+		var $new = $("<li><a href='#'><img src='img/gallery/album"+albumName+"/small_gallery_"+photoNumber+".jpg' data-large='img/gallery/album"+albumName+"/big_gallery_"+photoNumber+".jpg' alt='' data-description='' /></a></li>");
+		Gallery.addItems( $new );
+	}
+
+	
+}
+
+//table reservation functions
 function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}

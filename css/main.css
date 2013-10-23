@@ -1,3 +1,30 @@
+
+/*gallery*/
+#album-title{
+  color: rgb(227,184,110);
+  display: inline-block;
+}
+
+#album-title a{
+  text-decoration: none;
+  color: rgb(227,184,110);
+}
+
+#album-date{
+  color: rgb(223,205,175);
+  display: inline-block;
+  margin-left: 10px;
+}
+#album-date a{
+  text-decoration: none;
+  color: rgb(223,205,175);
+}
+#photos-section{
+  display: block;
+  width: 62%;
+  float: left;
+}
+/*pdf*/
 #pdf {
 width: 100%;
 height: 100%;
@@ -447,6 +474,48 @@ background: url("../img/forms/tick.png");
     width: 100%;
 }
 @media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */
+  
+/*gallery*/
+.content{
+  margin: -47px -32px 30px 25px;
+}
+#gallery-container{
+   display: block;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    margin-top: 40px;
+}
+#albums-section{
+  display: block;
+  width: 32%;
+  float: left;
+  margin-top: -37px;
+}
+#albums-section li {
+    list-style: none;
+    border-top: 1px solid;
+    border-color: rgba(148, 102, 23, 1) rgba(143, 95, 12, 1) rgba(121, 81, 13, 1) rgba(119, 81, 17, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#gallery-title{
+  color: rgb(227,184,110);
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-right: -10px;
+  padding-bottom: 0px;
+}
+#gallery-title img{
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: -20px;
+  margin-top: -30px;
+  width: 88px;
+  height: 66px;
+}
+
+
   .entry {
 padding: 30px;
 background: transparent;
@@ -598,6 +667,47 @@ width: 300px;
 }
 }
 @media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  
+/*gallery*/
+.content{
+  margin: -47px -48px 30px 25px;
+}
+
+#gallery-container{
+   display: block;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    margin-top: 40px;
+}
+#albums-section{
+  display: block;
+  width: 32%;
+  float: left;
+  margin-top: -1px;
+}
+#albums-section li {
+    list-style: none;
+    border-top: 1px solid;
+    border-color: rgba(148, 102, 23, 1) rgba(143, 95, 12, 1) rgba(121, 81, 13, 1) rgba(119, 81, 17, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#gallery-title{
+   color: rgb(227,184,110);
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-right: -10px;
+  padding-bottom: 37px;
+}
+#gallery-title img{
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 60px;
+    height: 38px;
+}
   .entry {
 padding: 30px;
 background: transparent;
@@ -746,6 +856,44 @@ width: 320px;
 }
 }
 @media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+
+/*gallery*/
+.content{
+  margin: -47px -48px 30px 25px;
+}
+#gallery-container{
+   display: block;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    margin-top: 40px;
+}
+#albums-section{
+  display: block;
+  width: 32%;
+  float: left;
+  margin-top: -4px;
+}
+#albums-section li {
+    list-style: none;
+    border-top: 1px solid;
+    border-color: rgba(148, 102, 23, 1) rgba(143, 95, 12, 1) rgba(121, 81, 13, 1) rgba(119, 81, 17, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#gallery-title{
+  color: rgb(227,184,110);
+  font-size: 33px;
+  text-transform: uppercase;
+  margin-right: -10px;
+  padding-bottom: 24px;
+}
+#gallery-title img{
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 60px;
+  height: 38px;
+}
 .entry {
 padding: 30px;
 background: transparent;
@@ -894,6 +1042,45 @@ width: 420px;
 }
 }
 @media (min-width: 768px){
+  
+/*gallery*/
+.content{
+  margin: -47px -48px 30px 25px;
+}
+
+#gallery-container{
+   display: block;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    margin-top: 40px;
+}
+#albums-section{
+  display: block;
+  width: 32%;
+  float: left;
+  margin-top: -17px;
+}
+#albums-section li {
+    list-style: none;
+    border-top: 1px solid;
+    border-color: rgba(148, 102, 23, 1) rgba(143, 95, 12, 1) rgba(121, 81, 13, 1) rgba(119, 81, 17, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#gallery-title{
+  color: rgb(227,184,110);
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-right: -10px;
+  padding-bottom: 24px;
+}
+#gallery-title img{
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 88px;
+  height: 66px;
+}
   .entry {
 padding: 30px;
 background: transparent;
@@ -1044,6 +1231,41 @@ width: 420px;
 }
 
 @media (min-width: 941px){
+  
+/*gallery*/
+#gallery-container{
+   display: block;
+    width: 100%;
+    min-height: 100%
+    height: auto;
+    margin-top: 40px;
+}
+#albums-section{
+  display: block;
+  width: 32%;
+  float: left;
+  margin-top: -17px;
+}
+#albums-section li {
+    list-style: none;
+    border-top: 1px solid;
+    border-color: rgba(148, 102, 23, 1) rgba(143, 95, 12, 1) rgba(121, 81, 13, 1) rgba(119, 81, 17, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#gallery-title{
+  color: rgb(227,184,110);
+  font-size: 37px;
+  text-transform: uppercase;
+  margin-right: -10px;
+  padding-bottom: 24px;
+}
+#gallery-title img{
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 88px;
+  height: 66px;
+}
   .entry {
 padding: 30px;
 background: transparent;
@@ -1201,6 +1423,41 @@ width: 420px;
 
 
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+  
+/*gallery*/
+#gallery-container{
+   display: block;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    margin-top: 40px;
+}
+#albums-section{
+  display: block;
+  width: 32%;
+  float: left;
+  margin-top: -17px;
+}
+#albums-section li {
+    list-style: none;
+    border-top: 1px solid;
+    border-color: rgba(148, 102, 23, 1) rgba(143, 95, 12, 1) rgba(121, 81, 13, 1) rgba(119, 81, 17, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#gallery-title{
+  color: rgb(227,184,110);
+  font-size: 37px;
+  text-transform: uppercase;
+  margin-right: -10px;
+  padding-bottom: 24px;
+}
+#gallery-title img{
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 88px;
+  height: 66px;
+}
    .entry {
 padding: 30px;
 background: transparent;
@@ -1341,6 +1598,41 @@ width: 420px;
     }
 }
 @media (min-width:1281px) { /* hi-res laptops and desktops */
+ 
+/*gallery*/
+#gallery-container{
+   display: block;
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    margin-top: 40px;
+}
+#albums-section{
+  display: block;
+  width: 32%;
+  float: left;
+  margin-top: -17px;
+}
+#albums-section li {
+    list-style: none;
+    border-top: 1px solid;
+    border-color: rgba(148, 102, 23, 1) rgba(143, 95, 12, 1) rgba(121, 81, 13, 1) rgba(119, 81, 17, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#gallery-title{
+  color: rgb(227,184,110);
+  font-size: 37px;
+  text-transform: uppercase;
+  margin-right: -10px;
+  padding-bottom: 24px;
+}
+#gallery-title img{
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 88px;
+  height: 66px;
+}
  .entry {
 padding: 30px;
 background: transparent;

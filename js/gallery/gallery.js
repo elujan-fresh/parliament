@@ -216,7 +216,7 @@ $(function() {
 				
 				$('<img/>').load( function() {
 					
-					$rgGallery.find('div.rg-image').empty().append('<img src="' + largesrc + '"/>');
+					$rgGallery.find('div.rg-image').empty().append("<a class='fancybox' rel='group' href='"+ largesrc + "'><img src='" + largesrc + "'/></a>");
 					
 					if( title )
 						$rgGallery.find('div.rg-caption').show().children('p').empty().text( title );
@@ -239,6 +239,7 @@ $(function() {
 				$items 		= $items.add( $($new) );
 				itemsCount	= $items.length; 
 				$esCarousel.elastislide( 'add', $new );
+
 			
 			};
 		
@@ -250,6 +251,7 @@ $(function() {
 	})();
 
 	Gallery.init();
+	$(".fancybox").fancybox();
 	
 	/*
 	Example to add more items to the gallery:
@@ -258,3 +260,4 @@ $(function() {
 	Gallery.addItems( $new );
 	*/
 });
+
