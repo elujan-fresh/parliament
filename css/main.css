@@ -139,6 +139,7 @@ background: url("../img/forms/tick.png");
   margin: -21px -20px -20px;
   padding: 15px;
   background:transparent;
+  text-align: left;
   @include linear-gradient(top, #fafafa, #eaeaea 50%, #e1e1e1 51%, #f2f2f2);
   @include box-shadow(inset 0 1px white);
 }
@@ -296,6 +297,7 @@ background: url("../img/forms/tick.png");
 
 #social-buttons{
    display: inline-block;
+   margin-bottom: 8px;
 }
 
 #social-buttons a {
@@ -312,6 +314,29 @@ background: url("../img/forms/tick.png");
     display: inline-block;
     margin: 0;
     padding: 0;
+ }
+
+ #social-buttons-hidden{
+   display: block;
+   margin: 0 auto;
+   width: 220px;
+}
+
+#social-buttons-hidden a {
+    text-decoration: none;
+ }
+
+  #social-buttons-hidden ul {
+    display: block;
+    opacity: 0.6;
+
+ }
+
+ #social-buttons-hidden li {
+    list-style: none;
+    display: block;
+    padding: 10px;
+    margin-left: -41px;
  }
 
 
@@ -337,7 +362,7 @@ background: url("../img/forms/tick.png");
     margin-bottom: -4px;
 }
 #fb-comment-bg{
-    width: 44px !important;
+    width: 57px !important;
     height: 32px !important;
     background: url('../img/home/comment-fb.png');
     background-repeat: no-repeat;
@@ -520,10 +545,14 @@ background: url("../img/forms/tick.png");
 padding: 30px;
 background: transparent;
 background: transparent;
-display: inline-block;
-float: left;
 margin-bottom: 0px;
 width: 300px;
+margin: 0 auto;
+}
+
+.entry h3{
+  margin-top: -20px;
+  margin-bottom: 10px;
 }
 
       #special-section{
@@ -603,10 +632,17 @@ width: 300px;
 #myCarousel{
    display: block;
    width: 100%;
+   margin: 0 auto;
+   margin-top: -42px;
+   margin-left: 8px;
+
 }
 #myCarousel2{
    display: block;
    width: 100%;
+   margin: 0 auto;
+   margin-top: 42px;
+   margin-left: 8px;
 }
 
 /* Declare heights because of positioning of img element */
@@ -619,17 +655,24 @@ width: 300px;
 }
 
 .carousel .item {
-  height: 306px;
+  height: 445px;
   background-color: #777;
 }
+.carousel-inner > .item > a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 445px;
+}
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 306px;
+  height: 445px;
 }
-
 
 
 
@@ -712,10 +755,9 @@ width: 300px;
 padding: 30px;
 background: transparent;
 background: transparent;
-display: inline-block;
-float: left;
 margin-bottom: 0px;
 width: 320px;
+margin: 0 auto;
 }
      #special-section{
     display: inline-block;
@@ -794,11 +836,15 @@ width: 320px;
 
 #myCarousel{
    display: block;
-   width: 100%;
+   width: 70%;
+   margin: 0 auto;
+   margin-top: -42px;
 }
 #myCarousel2{
    display: block;
-   width: 100%;
+  width: 70%;
+   margin: 0 auto;
+   margin-top: 42px;
 }
 
 /* Declare heights because of positioning of img element */
@@ -811,17 +857,23 @@ width: 320px;
 }
 
 .carousel .item {
-  height: 406px;
+  height: 405px;
   background-color: #777;
+}
+.carousel-inner > .item > a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 405px;
 }
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 406px;
+  height: 405px;
 }
-
 #up-line-menu{
     background: url('../img/home/line_header_footer.png');
     background-repeat: no-repeat;
@@ -898,10 +950,9 @@ width: 320px;
 padding: 30px;
 background: transparent;
 background: transparent;
-display: inline-block;
-float: left;
 margin-bottom: 0px;
 width: 420px;
+margin: 0 auto;
 }
 #special-section{
     display: inline-block;
@@ -979,10 +1030,14 @@ width: 420px;
 #myCarousel{
    display: block;
    width: 100%;
+   margin: 0px 0px 0px 20px;
+   margin-top: -42px;
 }
 #myCarousel2{
    display: block;
    width: 100%;
+   margin: 0px 0px 0px 20px;
+   margin-top: 42px;
 
 }
 
@@ -996,15 +1051,23 @@ width: 420px;
 }
 
 .carousel .item {
-  height: 500px;
+  height: 550px;
   background-color: #777;
 }
+.carousel-inner > .item > a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 550px;
+}
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
+  height: 550px;
 }
 
 
@@ -1085,10 +1148,9 @@ width: 420px;
 padding: 30px;
 background: transparent;
 background: transparent;
-display: inline-block;
-float: left;
 margin-bottom: 0px;
 width: 420px;
+margin: 0 auto;
 }
     #special-section{
     display: inline-block;
@@ -1168,11 +1230,15 @@ width: 420px;
    display: block;
    width: 62%;
    float: left;
+   margin: 0px 0px 0px 20px;
+   margin-top: 0px;
 }
 #myCarousel2{
    display: block;
    width: 26%;
-  float: right;
+   float: right;
+   margin: 0px 17px 0px 20px;
+   margin-top: 0px;
 
 }
 /* Declare heights because of positioning of img element */
@@ -1188,6 +1254,14 @@ width: 420px;
   height: 306px;
   background-color: #777;
 }
+.carousel-inner > .item > a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 306px;
+}
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -1270,10 +1344,9 @@ width: 420px;
 padding: 30px;
 background: transparent;
 background: transparent;
-display: inline-block;
-float: left;
 margin-bottom: 0px;
 width: 420px;
+margin: 0 auto;
 }
     #special-section{
     display: inline-block;
@@ -1357,11 +1430,16 @@ width: 420px;
    display: block;
    width: 62%;
    float: left;
+   margin: 0px 0px 0px 20px;
+   margin-top: 0px;
 }
 #myCarousel2{
    display: block;
    width: 26%;
-  float: right;
+   float: right;
+   margin: 0px 20px 0px 20px;
+   margin-top: 0px;
+
 
 }
 /* Declare heights because of positioning of img element */
@@ -1377,6 +1455,13 @@ width: 420px;
   height: 356px;
   background-color: #777;
 }
+.carousel-inner > .item > a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 356px;
+}
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -1384,6 +1469,7 @@ width: 420px;
   min-width: 100%;
   height: 356px;
 }
+
 
 
 #up-line-menu{
@@ -1462,10 +1548,9 @@ width: 420px;
 padding: 30px;
 background: transparent;
 background: transparent;
-display: inline-block;
-float: left;
 margin-bottom: 0px;
 width: 420px;
+margin: 0 auto;
 }
     #special-section{
     display: inline-block;
@@ -1535,11 +1620,15 @@ width: 420px;
    display: block;
    width: 62%;
    float: left;
+   margin: 0px 0px 0px 20px;
+   margin-top: 0px;
 }
 #myCarousel2{
    display: block;
    width: 26%;
   float: right;
+   margin: 0px 20px 0px 20px;
+   margin-top: 0px;
 
 }
 /* Declare heights because of positioning of img element */
@@ -1555,6 +1644,14 @@ width: 420px;
   height: 406px;
   background-color: #777;
 }
+.carousel-inner > .item > a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 406px;
+}
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -1637,10 +1734,9 @@ width: 420px;
 padding: 30px;
 background: transparent;
 background: transparent;
-display: inline-block;
-float: left;
 margin-bottom: 0px;
 width: 420px;
+margin: 0 auto;
 }
    #special-section{
     display: inline-block;
@@ -1711,11 +1807,15 @@ width: 420px;
    display: block;
    width: 62%;
    float: left;
+   margin: 0px 0px 0px 20px;
+   margin-top: 0px;
 }
 #myCarousel2{
    display: block;
    width: 26%;
   float: right;
+  margin: 0px 20px 0px 20px;
+   margin-top: 0px;
 
 }
 /* Declare heights because of positioning of img element */
@@ -1730,6 +1830,13 @@ width: 420px;
 .carousel .item {
   height: 356px;
   background-color: #777;
+}
+.carousel-inner > .item > a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 356px;
 }
 .carousel-inner > .item > img {
   position: absolute;

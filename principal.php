@@ -65,13 +65,19 @@
           </ol>
           <div class="carousel-inner">
             <div class="item active">
-              <img src="img/events/events_1.jpg" alt="1 slide">
+              <a class="reservations fancybox.ajax" href="reservation.php">
+                <img src="img/events/events_1.jpg" alt="1 slide">
+              </a>
             </div>
             <div class="item">
-              <img src="img/events/events_2.jpg" alt="2 slide">
+              <a class="reservations fancybox.ajax" href="reservation.php">
+                <img src="img/events/events_2.jpg" alt="2 slide">
+              </a>            
             </div>
             <div class="item">
-              <img src="img/events/events_3.jpg" alt="2 slide">
+              <a class="reservations fancybox.ajax" href="reservation.php">
+                <img src="img/events/events_3.jpg" alt="3 slide">
+              </a>            
             </div>
             
           </div>
@@ -92,8 +98,8 @@
           </li>
             <li>
                 <div id="private-parties">
-                  <a class="various fancybox.ajax" href="private_parties.php">
-                    <img src="img/home/private_parties.png"></img>Private Parties
+                  <a class="various" href="#social-hidden" href="#social">
+                    <img src="img/home/private_parties.png"></img>Social
                 </a>      
                 </div>
               </a>  

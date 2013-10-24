@@ -50,13 +50,13 @@
               <div id="menu-top" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                   <li id="menu-decoration"></li>
-                  <li id="index-option" class="active"><a href="#home" onclick="loadIndex();">Home</a></li>
-                  <li id="reservations-option"><a href="#reservations">Reservations</a></li>
-                  <li id="Private-option"><a href="#private">Private Events</a></li>
-                  <li id="menu-option"><a href="#menu">Menu</a></li>
-                  <li id="gallery-option"><a href="#gallery" onclick="loadGallery();">Gallery</a></li>
-                  <li id="about-option"><a href="#about" onclick="loadAbout();">About</a></li>
-                  <li id="contact-option"><a href="#contact" onclick="loadContact();">Contact</a></li>
+                   <li id="index-option" class="active"><a href="#home" onclick="loadIndex();">Home</a></li>
+                      <li id="reservations-option"><a href="#reservations" onclick="loadReservations();">Reservations</a></li>
+                      <li id="private-option"><a href="#private" onclick="loadPrivateParties();">Private Events</a></li>
+                      <li id="menu-option"><a href="#menu" onclick="loadMenu();">Menu</a></li>
+                      <li id="gallery-option"><a href="#gallery" onclick="loadGallery();">Gallery</a></li>
+                      <li id="about-option"><a href="#about" onclick="loadAbout();">About</a></li>
+                      <li id="contact-option"><a href="#contact"  onclick="loadContact();">Contact</a></li>
                   <li id="menu-decoration"></li>
 
                 </ul>
@@ -88,15 +88,6 @@
           <div  id="social-buttons">
             <ul>
               <li>
-                <div id="fb-box" class="fb-like" data-href="https://www.facebook.com/parliamentchicago" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div>
-              </li>
-              <li>
-                <a href="https://twitter.com/parliament_chi" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @parliament_chi</a>
-              </li>
-               <li>
-                <a href="https://twitter.com/share" class="twitter-share-button" data-related="parliament_chi" data-lang="en" data-size="medium" data-count="horizontal">Tweet</a>
-              </li>
-              <li>
                   <a class="various" href="https://www.facebook.com/parliamentchicago/" target="_blank" ><div id="fb-bg"></div></a>
               </li>
               <li>
@@ -112,9 +103,9 @@
                   <div  id="menu-bottom" class="menu-footer">
                   <ul id="menu-footer-nav">
                       <li id="index-option-bottom" class="active"><a href="#home" onclick="loadIndex();">Home</a></li>
-                      <li id="reservations-option-bottom"><a href="#reservations">Reservations</a></li>
-                      <li id="private-option-bottom"><a href="#private">Private Events</a></li>
-                      <li id="menu-option-bottom"><a href="#menu">Menu</a></li>
+                      <li id="reservations-option-bottom"><a href="#reservations" onclick="loadReservations();">Reservations</a></li>
+                      <li id="private-option-bottom"><a href="#private" onclick="loadPrivateParties();">Private Events</a></li>
+                      <li id="menu-option-bottom"><a href="#menu" onclick="loadMenu();">Menu</a></li>
                       <li id="gallery-option-bottom"><a href="#gallery" onclick="loadGallery();">Gallery</a></li>
                       <li id="about-option-bottom"><a href="#about" onclick="loadAbout();">About</a></li>
                       <li id="contact-option-bottom"><a href="#contact"  onclick="loadContact();">Contact</a></li>
@@ -129,6 +120,25 @@
      <div id="extra-footer-fb" style="display:none;">
       <div class="fb-comments" data-href="http://parliament.ndmmx.com/" data-colorscheme="dark" data-numposts="5" data-width="The pixel width of the plugin"></div>
     </div>
+
+
+<div id="social-hidden" style="display:none;">
+ <div  id="social-buttons-hidden" class="entry">
+  <h3>Social</h3>
+    <ul>
+      <li>
+        <div id="fb-box" class="fb-like" data-href="https://www.facebook.com/parliamentchicago" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div>
+      </li>
+      <li>
+        <a href="https://twitter.com/parliament_chi" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @parliament_chi</a>
+      </li>
+       <li class="twitterback">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-related="parliament_chi" data-lang="en" data-size="medium" data-count="horizontal">Tweet</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 <!-- JavaScript 
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

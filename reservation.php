@@ -1,4 +1,40 @@
-<div class="entry">
+<html lang="en">
+<head>
+
+<script type="text/javascript" src="js/jquery-ui.min.js">
+$(document).ready(function(){
+    $('#datepicker').datepicker();
+
+$('#datepicker').focus(function(){
+    $('#datepicker').datepicker('show');
+});
+
+$('#datepicker').click(function(){
+    $('#datepicker').datepicker('show');
+});
+//$('#ui-datepicker-div').show();
+$('#datepicker').datepicker('show');
+});
+</script>
+  <script>
+$("#uvform").submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+        method : "post",
+        url : this.action,
+        data : jQuery(this).serialize(),
+        success : function() {
+            window.location = "http://www.parliamentchicago.com/";
+        },
+        error : function() {
+            alert("Please verify that all required fields are filled in.");
+        }
+    });
+});
+</script>
+</head>
+<body>
+<div class="entry" >
 
       <h3>Please fill out the reservation form</h3>
       <div class="group">
@@ -93,3 +129,5 @@
     
       <div class="clear"></div>   
     </div>
+  </body>
+</html>

@@ -37,6 +37,8 @@ $(window).load(function (){
 		closeEffect	: 'none'
 		});
 
+
+
 //form reservation
 $(".reservations").fancybox({
 		maxWidth	: 800,
@@ -47,43 +49,40 @@ $(".reservations").fancybox({
 		autoSize	: true,
 		closeClick	: false,
 		openEffect	: 'none',
-		closeEffect	: 'none',
-		ajax: {
-        complete: function(jqXHR, textStatus) {
-            /*$('#datepicker').datepicker({
-		        inline: true,
-		        nextText: '&rarr;',
-		        prevText: '&larr;',
-		        showOtherMonths: true,
-		        dateFormat: 'yy-mm-dd',
-		        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-		        //showOn: "button",
-		        //buttonImage: "img/calendar-blue.png",
-		        //buttonImageOnly: true,
-		      } );*/
-
-            $("#uvform").submit(function(e) {
-			    e.preventDefault();
-			    $.ajax({
-			        method : "post",
-			        url : this.action,
-			        data : $(this).serialize(),
-			        success : function() {
-			            window.location = "http://parliament.ndmmx.com/";
-			        },
-			        error : function() {
-			            alert("Please verify that all required fields are filled in.");
-			        }
-			    	});
-				});
-
-            //$('#datepicker').datepicker( "show" );
-        }
-    }
+		closeEffect	: 'none'
 		});
 
 
 });
+function loadMenu(){
+	$.ajax({
+	  url: "menu.php",
+	  cache: false
+	})
+	 .done(function( html ) {
+	    $( "#principal-content" ).html( html );
+		$("#menu-top ul li").removeClass('active');
+		$("#about-option").addClass('active');
+		$("#menu-bottom ul li").removeClass('active');
+		$("#about-option-bottom").addClass('active');
+
+	  });
+}
+
+function loadReservations(){
+	$.ajax({
+	  url: "reservation.php",
+	  cache: false
+	})
+	 .done(function( html ) {
+	    $( "#principal-content" ).html( html );
+		$("#menu-top ul li").removeClass('active');
+		$("#reservations-option").addClass('active');
+		$("#menu-bottom ul li").removeClass('active');
+		$("#reservations-option-bottom").addClass('active');
+
+	  });
+}
 
 function loadContact(){
 	$.ajax({
@@ -185,3 +184,8 @@ function MM_validateForm() { //v4.0
   document.MM_returnValue = (errors == '');
 }
 //-->
+
+
+
+$("#datepicker").datepicker();
+$("#datepicker").datepicker("show");
