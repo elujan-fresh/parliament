@@ -184,8 +184,3 @@ function MM_validateForm() { //v4.0
   document.MM_returnValue = (errors == '');
 }
 //-->
-
-
-
-$("#datepicker").datepicker();
-$("#datepicker").datepicker("show");

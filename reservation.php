@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
 
-<script type="text/javascript" src="js/jquery-ui.min.js">
+<script type="text/javascript">
 $(document).ready(function(){
     $('#datepicker').datepicker();
 
