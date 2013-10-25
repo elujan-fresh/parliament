@@ -98,9 +98,9 @@
                   <li id="menu-decoration"></li>
                    <li id="index-option"><a id="loadHome" href="#home">Home</a></li>
                       <li id="reservations-option"><a href="#reservations" id="loadReservations">Reservations</a></li>
-                      <li id="private-option"><a href="#private" id="loadPrivateParties">Private Events</a></li>
+                      <li id="private-option" class="active"><a href="#private" id="loadPrivateParties">Private Events</a></li>
                       <li id="menu-option"><a href="#menu" id="loadMenu">Menu</a></li>
-                      <li id="gallery-option" class="active"><a href="#gallery" id="loadGallery">Gallery</a></li>
+                      <li id="gallery-option"><a href="#gallery" id="loadGallery">Gallery</a></li>
                       <li id="about-option"><a href="#about" id="loadAbout">About</a></li>
                       <li id="contact-option"><a href="#contact"  id="loadContact">Contact</a></li>
                   <li id="menu-decoration"></li>
@@ -167,9 +167,9 @@
                   <ul id="menu-footer-nav">
                       <li id="index-option-bottom"><a href="#home" id="loadIndex">Home</a></li>
                       <li id="reservations-option-bottom"><a href="#reservations" id="loadReservations">Reservations</a></li>
-                      <li id="private-option-bottom"><a href="#private" id="loadPrivateParties">Private Events</a></li>
+                      <li id="private-option-bottom" class="active"><a href="#private" id="loadPrivateParties">Private Events</a></li>
                       <li id="menu-option-bottom"><a href="#menu" id="loadMenu">Menu</a></li>
-                      <li id="gallery-option-bottom" class="active"><a href="#gallery" id="loadGallery">Gallery</a></li>
+                      <li id="gallery-option-bottom"><a href="#gallery" id="loadGallery">Gallery</a></li>
                       <li id="about-option-bottom"><a href="#about" id="loadAbout">About</a></li>
                       <li id="contact-option-bottom"><a href="#contact"  id="loadContact">Contact</a></li>
                   </ul>
