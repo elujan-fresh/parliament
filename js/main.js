@@ -12,18 +12,6 @@ $(window).load(function (){
 //twitter
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
-
-
-//ajax principal
-	$.ajax({
-	  url: "principal.php",
-	  cache: false
-	})
-	 .done(function( html ) {
-	    $( "#principal-content" ).html( html );
-
-	  });
-
 //fb social pop-up
 		$(".various").fancybox({
 		maxWidth	: 800,
@@ -52,101 +40,62 @@ $(".reservations").fancybox({
 		closeEffect	: 'none'
 		});
 
+$( "#loadHome" ).click(function() { window.location.href = "index.php";});
+$( "#loadMenu" ).click(function() { window.location.href = "menu.php";});
+$( "#loadReservations" ).click(function() { window.location.href = "reservation.php";});
+$( "#loadContact" ).click(function() { window.location.href = "contact.php";});
+$( "#loadAbout" ).click(function() { window.location.href = "about.php";});
+$( "#loadGallery" ).click(function() { window.location.href = "gallery.php";});
+$( "#loadPrivateParties" ).click(function() { window.location.href = "private_events.php";});
+
+$( "#loadHomeBottom" ).click(function() { window.location.href = "index.php";});
+$( "#loadMenuBottom" ).click(function() { window.location.href = "menu.php";});
+$( "#loadReservationsBottom" ).click(function() { window.location.href = "reservation.php";});
+$( "#loadContactBottom" ).click(function() { window.location.href = "contact.php";});
+$( "#loadAboutBottom" ).click(function() { window.location.href = "about.php";});
+$( "#loadGalleryBottom" ).click(function() { window.location.href = "gallery.php";});
+$( "#loadPrivatePartiesBottom" ).click(function() { window.location.href = "private_events.php";});
+
+
+
+
+$('#datepicker').click(function(){
+	$('#datepicker').datepicker({
+				inline: true,
+				nextText: '&rarr;',
+				prevText: '&larr;',
+				showOtherMonths: true,
+				dateFormat: 'yy-mm-dd',
+				dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+			});
+    $('#datepicker').datepicker('show');
+});
+
+
+$("#uvform").submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+        method : "post",
+        url : this.action,
+        data : jQuery(this).serialize(),
+        success : function() {
+            window.location = "http://www.parliamentchicago.com/";
+        },
+        error : function() {
+            alert("Please verify that all required fields are filled in.");
+        }
+    });
+});
+
+$("#single_1").fancybox({
+          helpers: {
+              title : {
+                  type : 'float'
+              }
+          }
+      });
 
 });
-function loadMenu(){
-	$.ajax({
-	  url: "menu.php",
-	  cache: false
-	})
-	 .done(function( html ) {
-	    $( "#principal-content" ).html( html );
-		$("#menu-top ul li").removeClass('active');
-		$("#about-option").addClass('active');
-		$("#menu-bottom ul li").removeClass('active');
-		$("#about-option-bottom").addClass('active');
-
-	  });
-}
-
-function loadReservations(){
-	$.ajax({
-	  url: "reservation.php",
-	  cache: false
-	})
-	 .done(function( html ) {
-	    $( "#principal-content" ).html( html );
-		$("#menu-top ul li").removeClass('active');
-		$("#reservations-option").addClass('active');
-		$("#menu-bottom ul li").removeClass('active');
-		$("#reservations-option-bottom").addClass('active');
-
-	  });
-}
-
-function loadContact(){
-	$.ajax({
-	  url: "contact.php",
-	  cache: false
-	})
-	 .done(function( html ) {
-	    $( "#principal-content" ).html( html );
-		$("#menu-top ul li").removeClass('active');
-		$("#contact-option").addClass('active');
-		$("#menu-bottom ul li").removeClass('active');
-		$("#contact-option-bottom").addClass('active');
-
-	  });
-}
-
-function loadAbout(){
-	$.ajax({
-	  url: "about.php",
-	  cache: false
-	})
-	 .done(function( html ) {
-	    $( "#principal-content" ).html( html );
-		$("#menu-top ul li").removeClass('active');
-		$("#about-option").addClass('active');
-		$("#menu-bottom ul li").removeClass('active');
-		$("#about-option-bottom").addClass('active');
-
-	  });
-}
-
-function loadGallery(){
-$.ajax({
-	  url: "gallery.php",
-	  cache: false
-	})
-	 .done(function( html ) {
-	    $( "#principal-content" ).html( html );
-	    /*/fancybox gallery
-		$(".fancybox").fancybox();*/
-		$("#menu-top ul li").removeClass('active');
-		$("#gallery-option").addClass('active');
-		$("#menu-bottom ul li").removeClass('active');
-		$("#gallery-option-bottom").addClass('active');
-
-	  });
-}
-
-function loadIndex(){
-$.ajax({
-	  url: "principal.php",
-	  cache: false
-	})
-	 .done(function( html ) {
-	    $( "#principal-content" ).html( html);
-	    $("#menu-top ul li").removeClass('active');
-	    $("#index-option").addClass('active');
-	    $("#menu-bottom ul li").removeClass('active');
-		$("#index-option-bottom").addClass('active');
-
-	  });
-
-
-}
 
 function loadAlbum(albumName,photosNumber){
 	$('#phothoscomplete-album').html("");
