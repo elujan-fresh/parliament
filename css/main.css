@@ -620,7 +620,7 @@ background: url("../img/forms/tick.png");
   height: 492px;
   margin-left: 0px;
   background-repeat: no-repeat;
-  
+  margin-top: 0px;
 }
 
 /*gallery*/
@@ -948,6 +948,7 @@ margin: 0 auto;
   height: 492px;
   margin-left: 5px;
   background-repeat: no-repeat;
+  margin-top: 0px;
   
 }
 /*gallery*/
@@ -1262,6 +1263,7 @@ margin: 0 auto;
   height: 492px;
   margin-left: 15px;
   background-repeat: no-repeat;
+   margin-top: 184px;
   
 }
 
@@ -1576,6 +1578,7 @@ margin: 0 auto;
   height: 492px;
   margin-left: 15px;
   background-repeat: no-repeat;
+  margin-top: 184px;
   
 }
 
@@ -1893,6 +1896,7 @@ margin: 0 auto;
   height: 492px;
   margin-left: 15px;
   background-repeat: no-repeat;
+  margin-top: 184px;
   
 }
 
@@ -2214,6 +2218,7 @@ margin: 0 auto;
   height: 492px;
   margin-left: 15px;
   background-repeat: no-repeat;
+  margin-top: 184px;
   
 }
 
@@ -2517,6 +2522,7 @@ margin: 0 auto;
   height: 492px;
   margin-left: 15px;
   background-repeat: no-repeat;
+  margin-top: 184px;
   
 }
 
@@ -2821,6 +2827,7 @@ margin: 0 auto;
   height: 492px;
   margin-left: 15px;
   background-repeat: no-repeat;
+  margin-top: 184px;
   
 }
 }
@@ -2940,7 +2947,7 @@ margin: 0 auto;
     height: 492px;
     margin-left: 15px;
     background-repeat: no-repeat;
-
+    margin-top: 0px;
     
   }
 }

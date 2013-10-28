@@ -75,9 +75,13 @@ include('header.php');
     </section>
     </div>
     <div id="map-section">
-        <a id="single_1" href="img/contact/big_map.jpg">
+        <!--<a id="single_1" href="img/contact/big_map.jpg">
+          <div id="map-image"></div>
+        </a>--> 
+        <a class="various fancybox.iframe" href="https://maps.google.com.mx/maps?ie=UTF8&amp;q=parliament+chicago&amp;fb=1&amp;gl=mx&amp;hq=parliament&amp;hnear=0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000,Chicago,+IL,+USA&amp;cid=0,0,7181962969688089317&amp;ll=41.896691,-87.636778&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A&amp;source=embed">
           <div id="map-image"></div>
         </a>
+
     </div>
   </div>
 </div>
